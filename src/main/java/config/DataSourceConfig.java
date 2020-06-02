@@ -22,7 +22,7 @@ public class DataSourceConfig {
     DataSource createDataSource() {
         LOG.info("--------->初始化持久化数据源");
         HikariDataSource dataSource = new HikariDataSource();
-        dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         dataSource.setJdbcUrl("jdbc:mysql://10.25.155.87:3306/familydb");
         dataSource.setUsername("root");
         dataSource.setPassword("");

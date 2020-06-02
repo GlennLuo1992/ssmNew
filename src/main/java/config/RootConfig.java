@@ -9,6 +9,4 @@ import service.impl.UserServiceImpl;
 @ComponentScan(basePackages = {"config","dao","pojo","service"},
         excludeFilters = {@ComponentScan.Filter(type = FilterType.ANNOTATION, value = EnableWebMvc.class)})
 public class RootConfig {
-
-
 }
