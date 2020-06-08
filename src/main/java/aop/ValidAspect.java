@@ -29,7 +29,9 @@ public class ValidAspect {
      */
     @Around("valid()")
     public Object around(ProceedingJoinPoint pjp) throws Throwable {
-        logger.info("!!!!!!!!");
-        return pjp.proceed();
+        logger.info("before");
+        Object result =  pjp.proceed();
+        logger.info("after");
+        return result;
     }
 }
